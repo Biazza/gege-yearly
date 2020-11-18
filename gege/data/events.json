@@ -1,0 +1,61 @@
+[{
+        "lectureName": "Abertura",
+        "speakerName": "João F Galera Monico / Daniele Alves",
+        "hour": "09h:00"
+    },
+    {
+        "lectureName": "PPP-RTK and Quality-Control",
+        "speakerName": "TEUNISSEN P. (Delft University of Technology)",
+        "hour": "09h:10"
+    },
+    {
+        "lectureName": "PEGASUS: DFMC (Dual-Frequency Multi-Constellation) GBAS evolutions",
+        "speakerName": "CACCIOPPOLI N. (Eurocontrol)",
+        "hour": "10h:10"
+    },
+    {
+        "lectureName": "New contributions to the detection of geophysical and astronomical signals with GNSS",
+        "speakerName": "PAJARES M. (UPC - Polytechnical University of Catalunya)",
+        "hour": "11h:10"
+    },
+    {
+        "lectureName": "Sistemas Aviônicos e a Navegação Aérea",
+        "speakerName": "BALVEDI G. C. (Boeing Brasil)",
+        "hour": "14h:00"
+    },
+    {
+        "lectureName": "O INCT GNSS NavAer: Situação atual e desafios",
+        "speakerName": "MONICO J F G; SHIMABUKURO M. (UNESP PP)",
+        "hour": "14h:30"
+    },
+    {
+        "lectureName": "Posicionamento e Sensoriamento Remoto Geodésico: Introdução e desenvolvimentos recentes na UNESP PP",
+        "speakerName": "ALVES D. (UNESP PP)",
+        "hour": "15h:00"
+    },
+    {
+        "lectureName": "Conceito de SSR no Posicionamento GNSS e sua inserção no RTCM",
+        "speakerName": "DE OLIVEIRA P S; KRUEGER C. (UFPR)",
+        "hour": "15h:40"
+    },
+    {
+        "lectureName": "Pesquisas em Geodésia na UFPE",
+        "speakerName": "SEIXAS A. GARNÉS S. J. A. (UFPE)",
+        "hour": "16h:10"
+    },
+    {
+        "lectureName": "Refletometria GNSS: Fundamentos e desenvolvimentos recentes",
+        "speakerName": "NIEVINSKI F. G (UFRGS)",
+        "hour": "16h:40"
+    },
+    {
+        "lectureName": "1) Pinpoint: desenvolvimento de um programa visando a avaliação de modelos e produtos para reduzir erros no posicionamento com GNSS. 2) Em direção ao IHRF e IGRF no Brasil. 3) Inteligência artificial e desafios computacionais em Geodésia",
+        "speakerName": "MACHADO W. C.; GUIMARÃES G; ROFATO V. (UFU Campus Monte Carmelo)",
+        "hour": "17h:20"
+    },
+    {
+        "lectureName": "Encerramento",
+        "speakerName": "-",
+        "hour": "18h:05"
+    }
+]

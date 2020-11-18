@@ -1,0 +1,42 @@
+.header {
+    background-color: #224050;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_title {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.header_subtitle {
+    color: white;
+}
+
+.youtube_channel {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.youtube_channel:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.card_text {
+    text-align: justify;
+}
+
+.nav_menu {
+    background-color: #224050;
+    border-radius: 0px 0px 25px 25px;
+}
