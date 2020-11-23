@@ -258,7 +258,12 @@ export default function Home({ allEvents }) {
                 inform your name, the speaker you want to ask, and the
                 questioning)
               </li>
-              <li></li>
+              <li>
+                Serão emitidos certificados de participação para o evento, que
+                serão distribuídos a partir de cadastro em um formulário
+                (Certificates of participation will be issued for the event,
+                which will be distributed from registration on a form)
+              </li>
               <li>
                 O link para o formulário de indicação de participação no
                 seminário anual, e que será utilizado para emissão do
