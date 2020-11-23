@@ -414,6 +414,13 @@ export default function Home({ allEvents }) {
       <Container fluid>
         <Row>
           <Col>
+            <div className={styles.powered}>
+              Powered by: <a href="https://biazza.vercel.app/">Biazza</a>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
             <Image
               src="/images/footer.svg"
               alt="footer"
