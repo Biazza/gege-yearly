@@ -36,6 +36,12 @@
     text-align: justify;
 }
 
+.gege_logo_text {
+    text-align: center;
+    width: 150px;
+    height: 100px;
+}
+
 .nav_menu {
     background-color: #224050;
     border-radius: 0px 0px 25px 25px;
