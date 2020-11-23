@@ -86,10 +86,10 @@ export default function Home({ allEvents }) {
                     GEGE – com palestras de pesquisadores convidados e dos
                     pesquisadores e professores que participam das reuniões
                     quinzenais do GEGE, envolvendo a UNESP PP, UFPR, UFPE, UFRGS
-                    e UFU (Annual seminar with lectures by invited researchers
-                    and professors and researchers who participate in the
-                    meetings of GEGE, involving UNESP, UFPR, UFPE, UFRGS and
-                    UFU).
+                    e UFU. <br />
+                    Annual seminar with lectures by invited researchers and
+                    professors and researchers who participate in the meetings
+                    of GEGE, involving UNESP, UFPR, UFPE, UFRGS and UFU)
                   </p>
                 </Card.Body>
               </Card>
@@ -103,13 +103,14 @@ export default function Home({ allEvents }) {
                     Geodésico Brasileiro (SGB). Fazem parte ainda estudos
                     relativos com as influências que afetam o sinal no seu
                     trajeto entre o satélite e o receptor, bem como suas
-                    aplicações em estudos atmosféricos (The group aims to
-                    discuss issues related to Geodesy, involving GPS, GLONASS,
-                    and Galileo, as well as the references involved in their
-                    achievements and the Brazilian Geodetic System (SGB). There
-                    are also studies related to the influences that affect the
-                    signal in its path between the satellite and the receiver,
-                    as well as its applications in atmospheric studies).
+                    aplicações em estudos atmosféricos. <br />
+                    The group aims to discuss issues related to Geodesy,
+                    involving GPS, GLONASS, and Galileo, as well as the
+                    references involved in their achievements and the Brazilian
+                    Geodetic System (SGB). There are also studies related to the
+                    influences that affect the signal in its path between the
+                    satellite and the receiver, as well as its applications in
+                    atmospheric studies.
                   </p>
                   <YouTube video="dMAjeueLm3w" autoplay />
                 </Card.Body>
@@ -231,50 +232,65 @@ export default function Home({ allEvents }) {
         <Row>
           <Col>
             <ul>
-              <li>
-                O evento é gratuíto e aberto à comunidade (The event is free and
-                open to the community)
-              </li>
+              <li>O evento é gratuíto e aberto à comunidade</li>
               <li>
                 As palestras/apresentações serão transmitidas em uma live no
-                canal do GEGE no YouTube (The lectures/presentations will be
-                broadcast live on the GEGE YouTube channel)
+                canal do GEGE no YouTube
               </li>
               <li>
-                O link para a live (The link to live):{" "}
+                O link para a live:{" "}
                 <Badge variant="secondary">
                   <RiRadioButtonLine /> Offline
                 </Badge>{" "}
               </li>
               <li>
                 As perguntas aos palestrantes deverão ser feitas no chat da live
-                no YouTube, e serão oportunamente lidas em ordem (The questions
-                to the speakers should be asked in the live chat on YouTube and
-                will be read in due course)
+                no YouTube, e serão oportunamente lidas em ordem
               </li>
               <li>
                 Ao realizar a pergunta, informe seu nome, o palestrante a quem
-                deseja perguntar e o questionamento (When asking the question,
-                inform your name, the speaker you want to ask, and the
-                questioning)
+                deseja perguntar e o questionamento
               </li>
               <li>
                 Serão emitidos certificados de participação para o evento, que
                 serão distribuídos a partir de cadastro em um formulário
-                (Certificates of participation will be issued for the event,
-                which will be distributed from registration on a form)
               </li>
               <li>
                 O link para o formulário de indicação de participação no
                 seminário anual, e que será utilizado para emissão do
                 certificado de participação, será divulgado aqui no site do
                 evento e na descrição da live. O correto preenchimento do
-                formulário é de inteira responsabilidade do participante (The
-                link to the form for indicating participation in the annual
+                formulário é de inteira responsabilidade do participante
+              </li>
+              <li>The event is free and open to the community</li>
+              <li>
+                The lectures/presentations will be broadcast live on the GEGE
+                YouTube channel
+              </li>
+              <li>
+                The link to live:{" "}
+                <Badge variant="secondary">
+                  <RiRadioButtonLine /> Offline
+                </Badge>{" "}
+              </li>
+              <li>
+                The questions to the speakers should be asked in the live chat
+                on YouTube and will be read in due course
+              </li>
+              <li>
+                When asking the question, inform your name, the speaker you want
+                to ask, and the questioning
+              </li>
+              <li>
+                Certificates of participation will be issued for the event,
+                which will be distributed from registration on a form
+              </li>
+              <li>
+                The link to the form for indicating participation in the annual
                 seminar, which will be used to issue the certificate of
                 participation, will be disclosed here on the event website and
                 in the description of the live. Correct completion of the form
-                is the sole responsibility of the participant)
+                is the sole responsibility of the participant
               </li>
             </ul>
           </Col>
@@ -415,7 +431,7 @@ export default function Home({ allEvents }) {
         <Row>
           <Col>
             <div className={styles.powered}>
-              Powered by: <a href="https://biazza.vercel.app/">Biazza</a>
+              Developed by: <a href="https://biazza.vercel.app/">Biazza</a>
             </div>
           </Col>
         </Row>
