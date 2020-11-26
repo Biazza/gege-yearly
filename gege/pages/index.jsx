@@ -24,6 +24,7 @@ import {
 import { RiRadioButtonLine } from "react-icons/ri";
 import { getAllEvents } from "../lib/util";
 import YouTube from "@u-wave/react-youtube";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home({ allEvents }) {
   return (
@@ -33,26 +34,62 @@ export default function Home({ allEvents }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container fluid>
-        <Row>
-          <Col>
-            <div className={styles.header}>
-              <div className={styles.title_container}>
-                <Image
-                  src="/images/gege.png"
-                  width="100"
-                  height="100"
-                  alt="GEGE logo"
-                />
-                <h1 className={styles.header_title}>GEGE ANUAL - 2020</h1>
-              </div>
+      <div className={styles.header}>
+        <br />
+        <Container>
+          <Row>
+            <Col
+              xl={{ span: 1, offset: 4 }}
+              lg={{ span: 1, offset: 4 }}
+              md={{ span: 6, offset: 6 }}
+              sm={{ span: 6, offset: 4 }}
+              xs={{ span: 6, offset: 4 }}
+            >
+              <Image
+                src="/images/gege.png"
+                width="100"
+                height="100"
+                alt="GEGE logo"
+              />
+            </Col>
+            <Col
+              className="align-self-center"
+              xl={{ span: 6, offset: 0 }}
+              lg={{ span: 6, offset: 0 }}
+              md={{ span: 9, offset: 3 }}
+              sm={{ span: 10, offset: 0 }}
+              xs={{ span: 10, offset: 2 }}
+            >
+              <h1 className={styles.header_title}>GEGE ANUAL - 2020</h1>
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col
+              xl={{ span: 9, offset: 2 }}
+              lg={{ span: 9, offset: 2 }}
+              md={{ span: 12, offset: 0 }}
+              sm={{ span: 12, offset: 0 }}
+              xs={{ span: 12, offset: 0 }}
+            >
               <h4 className={styles.header_subtitle}>
                 Seminário Anual do Grupo de Estudos em Geodésia Espacial
               </h4>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+            </Col>
+            <Col
+              xl={{ span: 9, offset: 2 }}
+              lg={{ span: 9, offset: 2 }}
+              md={{ span: 12, offset: 0 }}
+              sm={{ span: 12, offset: 0 }}
+              xs={{ span: 12, offset: 0 }}
+            >
+              <h4 className={styles.header_subtitle}>
+                Annual Seminar of the Space Geodesy Study Group
+              </h4>
+            </Col>
+          </Row>
+        </Container>
+      </div>
 
       <Container>
         <Navbar expand="lg" variant="dark" className={styles.nav_menu}>
@@ -98,19 +135,20 @@ export default function Home({ allEvents }) {
                   <Card.Title>O GEGE/THE GEGE</Card.Title>
                   <p className={styles.card_text}>
                     O grupo tem por objetivo discutir assuntos ligados com a
-                    Geodésia, envolvendo GPS, GLONASS e Galileo, bem como os
-                    referenciais envolvidos em suas realizações e no Sistema
-                    Geodésico Brasileiro (SGB). Fazem parte ainda estudos
-                    relativos com as influências que afetam o sinal no seu
-                    trajeto entre o satélite e o receptor, bem como suas
-                    aplicações em estudos atmosféricos. <br />
+                    Geodésia, envolvendo GPS, GLONASS, Beidou/Compass e Galileo,
+                    bem como os referenciais geodésicos envolvidos em suas
+                    realizações e no Sistema Geodésico Brasileiro (SGB). Fazem
+                    parte ainda estudos relativos com as influências que afetam
+                    o sinal no seu trajeto entre o satélite e o receptor, bem
+                    como suas aplicações em sensorialmente remoto Geodésico.
+                    <br />
                     The group aims to discuss issues related to Geodesy,
-                    involving GPS, GLONASS, and Galileo, as well as the
-                    references involved in their achievements and the Brazilian
-                    Geodetic System (SGB). There are also studies related to the
-                    influences that affect the signal in its path between the
-                    satellite and the receiver, as well as its applications in
-                    atmospheric studies.
+                    involving GPS, GLONASS, Beidou/Compass and Galileo, as well
+                    as the geodetic references involved in their realizations
+                    (frames) and the Brazilian Geodetic System (SGB). There are
+                    also studies related to the influences that affect the
+                    signal in its path between the satellite and the receiver,
+                    as well as its applications in Geodetic Remote Sense.
                   </p>
                   <YouTube video="dMAjeueLm3w" autoplay />
                 </Card.Body>
