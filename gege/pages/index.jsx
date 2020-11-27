@@ -465,7 +465,7 @@ export default function Home({ allEvents }) {
             </Col>
           </Row>
         </div>
-        <div className="d-none d-sm-block d-md-none">
+        <div className="d-sm-block d-md-none">
           <Row>
             <Col>
               <h5>Realização/Realization:</h5>
