@@ -161,7 +161,7 @@ export default function Home({ allEvents }) {
                   </p>
                   <p>
                     <strong>
-                      Início ás 9h00 - Horário de Brasília (UTC-03:00)
+                      Início às 9h00 - Horário de Brasília (UTC-03:00)
                     </strong>
                   </p>
                   <p>Local/Place:{"   "}</p>
@@ -202,8 +202,8 @@ export default function Home({ allEvents }) {
                 imagePath="/images/peter_teunissen.jpg"
                 lectureTitle="PPP-RTK and Quality-Control"
                 speakerName="PETER TEUNISSEN (Delft University of Technology)"
-                lectureStart="09:10"
-                lectureEnd="10:10"
+                lectureStart="09:15"
+                lectureEnd="10:15"
               />
               <br />
               <Speakers
@@ -211,8 +211,8 @@ export default function Home({ allEvents }) {
                 lectureTitle="PEGASUS: DFMC (Dual- Frequency Multi-Constellation) GBAS
                 evolutions"
                 speakerName="NATALI CACCIOPPOLI (Eurocontrol)"
-                lectureStart="10:10"
-                lectureEnd="11:10"
+                lectureStart="10:20"
+                lectureEnd="11:20"
               />
               <br />
               <Speakers
@@ -221,8 +221,8 @@ export default function Home({ allEvents }) {
                 astronomical signals with GNSS"
                 speakerName="MANUEL HERNÁNDEZ-PAJARES (UPC - Polytechnical University of
                   Catalunya)"
-                lectureStart="11:10"
-                lectureEnd="12:10"
+                lectureStart="11:25"
+                lectureEnd="12:25"
               />
             </ul>
           </Col>
