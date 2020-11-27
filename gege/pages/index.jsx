@@ -248,9 +248,9 @@ export default function Home({ allEvents }) {
               </thead>
               <tbody>
                 {allEvents.map(({ lectureName, speakerName, hour }) => (
-                  <tr key={lectureName}>
+                  <tr key={hour}>
                     <td>{hour}</td>
-                    <td>{lectureName}</td>
+                    <td style={{ verticalAlign: "middle" }}>{lectureName}</td>
                     <td>{speakerName}</td>
                   </tr>
                 ))}
@@ -342,129 +342,249 @@ export default function Home({ allEvents }) {
             <br />
           </Col>
         </Row>
-        <Row>
-          <Col>
-            <h5>Realização/Realization:</h5>
-          </Col>
-          <Col>
-            <h5>Apoio/Support:</h5>
-          </Col>
-          <Col>
-            <h5>Colaboração/Collaboration:</h5>
-          </Col>
-        </Row>
 
-        <Row>
-          <Col>
-            <Row>
-              <Col>
-                <Image
-                  src="/images/gege_completo.png"
-                  alt="GEGE"
-                  width="100"
-                  height="150"
-                />
-              </Col>
-            </Row>
-          </Col>
-          <Col>
-            <br />
-            <Row>
-              <Col>
-                <Image
-                  src="/images/capes.png"
-                  alt="Capes"
-                  width="200"
-                  height="35"
-                  className={styles.gege_logo}
-                />
-              </Col>
-            </Row>
-            <br />
-            <Row>
-              <Col>
-                <Image
-                  src="/images/cnpq.png"
-                  alt="Cnpq"
-                  width="200"
-                  height="70"
-                />
-              </Col>
-            </Row>
-            <br />
-            <Row>
-              <Col>
-                <Image
-                  src="/images/fapesp.png"
-                  alt="Fapesp"
-                  width="200"
-                  height="35"
-                />
-              </Col>
-            </Row>
-            <br />
-            <Row>
-              <Col>
-                <Image
-                  src="/images/fundunesp.png"
-                  alt="Fundunesp"
-                  width="200"
-                  height="70"
-                />
-              </Col>
-            </Row>
-          </Col>
-          <Col>
-            <Row>
-              <Col>
-                <Image
-                  src="/images/unesp.png"
-                  alt="Unesp"
-                  width="100"
-                  height="100"
-                />
-              </Col>
-              <Col>
-                <Image
-                  src="/images/ufpe.png"
-                  alt="UFPE"
-                  width="200"
-                  height="100"
-                />
-              </Col>
-            </Row>
-            <br />
-            <Row>
-              <Col>
-                <Image
-                  src="/images/ufrgs.png"
-                  alt="UFRGS"
-                  width="100"
-                  height="100"
-                />
-              </Col>
-              <Col>
-                <Image
-                  src="/images/ufpr.png"
-                  alt="UFPR"
-                  width="200"
-                  height="200"
-                />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <Image
-                  src="/images/ufu.png"
-                  alt="UFU"
-                  width="200"
-                  height="100"
-                />
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+        <div className="d-none d-md-block d-sm-none">
+          <Row>
+            <Col>
+              <h5>Realização/Realization:</h5>
+            </Col>
+            <Col>
+              <h5>Apoio/Support:</h5>
+            </Col>
+            <Col>
+              <h5>Colaboração/Collaboration:</h5>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Row>
+                <Col>
+                  <Image
+                    src="/images/gege_completo.png"
+                    alt="GEGE"
+                    width="100"
+                    height="150"
+                  />
+                </Col>
+              </Row>
+            </Col>
+            <Col>
+              <br />
+              <Row>
+                <Col>
+                  <Image
+                    src="/images/capes.png"
+                    alt="Capes"
+                    width="200"
+                    height="35"
+                  />
+                </Col>
+              </Row>
+              <br />
+              <Row>
+                <Col>
+                  <Image
+                    src="/images/cnpq.png"
+                    alt="Cnpq"
+                    width="200"
+                    height="70"
+                  />
+                </Col>
+              </Row>
+              <br />
+              <Row>
+                <Col>
+                  <Image
+                    src="/images/fapesp.png"
+                    alt="Fapesp"
+                    width="200"
+                    height="35"
+                  />
+                </Col>
+              </Row>
+              <br />
+              <Row>
+                <Col>
+                  <Image
+                    src="/images/fundunesp.png"
+                    alt="Fundunesp"
+                    width="200"
+                    height="70"
+                  />
+                </Col>
+              </Row>
+            </Col>
+            <Col>
+              <Row>
+                <Col>
+                  <Image
+                    src="/images/unesp.png"
+                    alt="Unesp"
+                    width="100"
+                    height="100"
+                  />
+                </Col>
+                <Col>
+                  <Image
+                    src="/images/ufu.png"
+                    alt="UFU"
+                    width="200"
+                    height="100"
+                  />
+                </Col>
+              </Row>
+              <br />
+              <Row>
+                <Col>
+                  <Image
+                    src="/images/ufrgs.png"
+                    alt="UFRGS"
+                    width="100"
+                    height="100"
+                  />
+                </Col>
+                <Col>
+                  <Image
+                    src="/images/ufpr.png"
+                    alt="UFPR"
+                    width="200"
+                    height="200"
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <Image
+                    src="/images/ufpe.png"
+                    alt="UFPE"
+                    width="200"
+                    height="100"
+                  />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </div>
+        <div className="d-none d-sm-block d-md-none">
+          <Row>
+            <Col>
+              <h5>Realização/Realization:</h5>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Image
+                src="/images/gege_completo.png"
+                alt="GEGE"
+                width="100"
+                height="150"
+              />
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col>
+              <h5>Apoio/Support:</h5>
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col>
+              <Image
+                src="/images/capes.png"
+                alt="Capes"
+                width="200"
+                height="35"
+              />
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col>
+              <Image
+                src="/images/cnpq.png"
+                alt="Cnpq"
+                width="200"
+                height="70"
+              />
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col>
+              <Image
+                src="/images/fapesp.png"
+                alt="Fapesp"
+                width="200"
+                height="35"
+              />
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col>
+              <Image
+                src="/images/fundunesp.png"
+                alt="Fundunesp"
+                width="200"
+                height="70"
+              />
+            </Col>
+          </Row>
+          <br />
+          <Row>
+            <Col>
+              <h5>Colaboração/Collaboration:</h5>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Image
+                src="/images/unesp.png"
+                alt="Unesp"
+                width="100"
+                height="100"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Image src="/images/ufu.png" alt="UFU" width="200" height="100" />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Image
+                src="/images/ufrgs.png"
+                alt="UFRGS"
+                width="100"
+                height="100"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Image
+                src="/images/ufpr.png"
+                alt="UFPR"
+                width="200"
+                height="200"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Image
+                src="/images/ufpe.png"
+                alt="UFPE"
+                width="200"
+                height="100"
+              />
+            </Col>
+          </Row>          
+        </div>
       </Container>
+      <br />
       <Container fluid>
         <Row>
           <Col>
