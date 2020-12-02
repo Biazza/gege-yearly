@@ -22,6 +22,7 @@ import {
   IoMdCheckmarkCircle,
 } from "react-icons/io";
 import { RiRadioButtonLine } from "react-icons/ri";
+import { IoIosTime } from "react-icons/io";
 import { getAllEvents } from "../lib/util";
 import YouTube from "@u-wave/react-youtube";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -97,13 +98,15 @@ export default function Home({ allEvents }) {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
               <Nav.Item>
-                <Nav.Link href="#lectures">Palestras/Lectures</Nav.Link>
+                <Nav.Link href="#lectures">
+                  Palestrantes Convidados/Invited Speakers
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#schedule">Programação/Schedule</Nav.Link>
+                <Nav.Link href="#schedule">Programação/Program</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="#info">Informações/Informations</Nav.Link>
+                <Nav.Link href="#info">Informações/Information</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link href="#about">Sobre/About</Nav.Link>
@@ -123,10 +126,11 @@ export default function Home({ allEvents }) {
                     GEGE – com palestras de pesquisadores convidados e dos
                     pesquisadores e professores que participam das reuniões
                     quinzenais do GEGE, envolvendo a UNESP PP, UFPR, UFPE, UFRGS
-                    e UFU. <br />
+                    e UFU.
+                    <br />
                     Annual seminar with lectures by invited researchers and
                     professors and researchers who participate in the meetings
-                    of GEGE, involving UNESP, UFPR, UFPE, UFRGS and UFU)
+                    of GEGE, involving UNESP PP, UFPR, UFPE, UFRGS and UFU.
                   </p>
                 </Card.Body>
               </Card>
@@ -140,7 +144,7 @@ export default function Home({ allEvents }) {
                     realizações e no Sistema Geodésico Brasileiro (SGB). Fazem
                     parte ainda estudos relativos com as influências que afetam
                     o sinal no seu trajeto entre o satélite e o receptor, bem
-                    como suas aplicações em sensorialmente remoto Geodésico.
+                    como suas aplicações em sensoriamento remoto Geodésico.
                     <br />
                     The group aims to discuss issues related to Geodesy,
                     involving GPS, GLONASS, Beidou/Compass and Galileo, as well
@@ -148,21 +152,23 @@ export default function Home({ allEvents }) {
                     (frames) and the Brazilian Geodetic System (SGB). There are
                     also studies related to the influences that affect the
                     signal in its path between the satellite and the receiver,
-                    as well as its applications in Geodetic Remote Sense.
+                    as well as its applications in Geodetic Remote Sensing.
                   </p>
-                  <YouTube video="dMAjeueLm3w" autoplay />
                 </Card.Body>
               </Card>
               <Card>
                 <Card.Body>
                   <Card.Title>DATA E LOCAL/DATE AND PLACE</Card.Title>
+                  <p>Data/Date:</p>
                   <p>
-                    Data/Date: <strong>18/12/2020</strong>
+                    <strong>18 de Dezembro de 2020</strong>
+                    <br />
+                    <strong>Início às 9h00 - Horário de Brasília</strong>
                   </p>
                   <p>
-                    <strong>
-                      Início às 9h00 - Horário de Brasília (UTC-03:00)
-                    </strong>
+                    <strong>December 18, 2020</strong>
+                    <br />
+                    <strong>Starts at 9:00 am - BRT (UTC-03:00)</strong>
                   </p>
                   <p>Local/Place:{"   "}</p>
                   <Button variant="danger">
@@ -181,6 +187,13 @@ export default function Home({ allEvents }) {
                       <RiRadioButtonLine /> Offline
                     </Badge>
                   </p>
+                  <Card.Title>MAIS/MORE</Card.Title>
+                  <YouTube video="dMAjeueLm3w" />
+                  <br />
+                  <br />
+                  <a href="https://www.fct.unesp.br/#!/pesquisa/grupos-de-estudo-e-pesquisa/gege/home">
+                    Site do GEGE/GEGE Website
+                  </a>
                 </Card.Body>
               </Card>
             </CardDeck>
@@ -190,7 +203,7 @@ export default function Home({ allEvents }) {
         <Row>
           <Col>
             <h3 id="lectures">
-              <IoMdMicrophone /> Palestras/Lectures
+              <IoMdMicrophone /> Palestrantes Convidados/Invited Speakers
             </h3>
             <br />
           </Col>
@@ -200,10 +213,10 @@ export default function Home({ allEvents }) {
             <ul className="list-unstyled">
               <Speakers
                 imagePath="/images/peter_teunissen.jpg"
-                lectureTitle="PPP-RTK and Quality-Control"
+                lectureTitle="PPP and PPP-RTK: Principles and Methods"
                 speakerName="PETER TEUNISSEN (Delft University of Technology)"
-                lectureStart="09:15"
-                lectureEnd="10:15"
+                lectureStart="09h15"
+                lectureEnd="10h15"
               />
               <br />
               <Speakers
@@ -211,8 +224,8 @@ export default function Home({ allEvents }) {
                 lectureTitle="PEGASUS: DFMC (Dual- Frequency Multi-Constellation) GBAS
                 evolutions"
                 speakerName="NATALI CACCIOPPOLI (Eurocontrol)"
-                lectureStart="10:20"
-                lectureEnd="11:20"
+                lectureStart="10h20"
+                lectureEnd="11h20"
               />
               <br />
               <Speakers
@@ -221,8 +234,8 @@ export default function Home({ allEvents }) {
                 astronomical signals with GNSS"
                 speakerName="MANUEL HERNÁNDEZ-PAJARES (UPC - Polytechnical University of
                   Catalunya)"
-                lectureStart="11:25"
-                lectureEnd="12:25"
+                lectureStart="11h25"
+                lectureEnd="12h30"
               />
             </ul>
           </Col>
@@ -231,7 +244,7 @@ export default function Home({ allEvents }) {
         <Row>
           <Col>
             <h3 id="schedule">
-              <IoIosCalendar /> Programação/Schedule (18/12/2020)
+              <IoIosCalendar /> Programação/Program (18/12/2020)
             </h3>
             <br />
           </Col>
@@ -241,9 +254,11 @@ export default function Home({ allEvents }) {
             <Table striped bordered hover responsive>
               <thead>
                 <tr>
-                  <th>Horário</th>
-                  <th>Palestra/Apresentação/Lecture</th>
-                  <th>Responsável(eis)/Speaker</th>
+                  <th>
+                    <IoIosTime />
+                  </th>
+                  <th>Palestras/Lectures</th>
+                  <th>Apresentadores/Speakers</th>
                 </tr>
               </thead>
               <tbody>
@@ -262,7 +277,7 @@ export default function Home({ allEvents }) {
         <Row>
           <Col>
             <h3 id="info">
-              <IoMdCheckmarkCircle /> Informações/Informations
+              <IoMdCheckmarkCircle /> Informações/Information
             </h3>
             <br />
           </Col>
@@ -581,7 +596,7 @@ export default function Home({ allEvents }) {
                 height="100"
               />
             </Col>
-          </Row>          
+          </Row>
         </div>
       </Container>
       <br />

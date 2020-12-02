@@ -23,8 +23,8 @@ export default function Speakers({
         <div className={styles.speaker_container}>
           <h5>{lectureTitle}</h5>
           <p>
-            Palestrante: {speakerName} <br />
-            Horário: {lectureStart} - {lectureEnd}h <IoIosTime />
+            {speakerName} <br />
+            {lectureStart} - {lectureEnd} <IoIosTime />
           </p>
         </div>
       </Media.Body>
