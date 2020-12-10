@@ -97,6 +97,11 @@ export default function Home({ allEvents }) {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
+              <Navbar.Brand href="https://youtu.be/68MlUqJwYU8">
+                <Badge variant="danger">
+                  <RiRadioButtonLine /> Online
+                </Badge>
+              </Navbar.Brand>
               <Nav.Item>
                 <Nav.Link href="#lectures">
                   Palestrantes Convidados/Invited Speakers
@@ -132,6 +137,22 @@ export default function Home({ allEvents }) {
                     professors and researchers who participate in the meetings
                     of GEGE, involving UNESP PP, UFPR, UFPE, UFRGS and UFU.
                   </p>
+                  <br />
+                  <Card.Title>LINK PARA LIVE/LINK TO LIVE</Card.Title>
+                  <Button variant="danger" className={styles.live_button}>
+                    <a
+                      href="https://youtu.be/68MlUqJwYU8"
+                      className={styles.youtube_channel}
+                    >
+                      <RiRadioButtonLine /> Online
+                    </a>
+                  </Button>
+                  <br />
+                  <br />
+                  <Card.Title>LINK PARA CERTIFICADOS</Card.Title>
+                  <a href="https://forms.gle/ZQeNBEcu65FcyRX29">
+                    Formulário participação/Participation Form
+                  </a>
                 </Card.Body>
               </Card>
               <Card>
@@ -171,7 +192,7 @@ export default function Home({ allEvents }) {
                     <strong>Starts at 9:00 am - BRT (UTC-03:00)</strong>
                   </p>
                   <p>Local/Place:{"   "}</p>
-                  <Button variant="danger">
+                  <Button variant="danger" className={styles.live_button}>
                     <a
                       href="https://www.youtube.com/channel/UCdQYUhUNS6odJnKLFB7kZPQ"
                       className={styles.youtube_channel}
@@ -181,12 +202,6 @@ export default function Home({ allEvents }) {
                   </Button>
                   <br />
                   <br />
-                  <p>
-                    Link para Live:{" "}
-                    <Badge variant="secondary">
-                      <RiRadioButtonLine /> Offline
-                    </Badge>
-                  </p>
                   <Card.Title>MAIS/MORE</Card.Title>
                   <YouTube video="dMAjeueLm3w" />
                   <br />
@@ -292,8 +307,13 @@ export default function Home({ allEvents }) {
               </li>
               <li>
                 O link para a live:{" "}
-                <Badge variant="secondary">
-                  <RiRadioButtonLine /> Offline
+                <Badge variant="danger">
+                  <a
+                    href="https://youtu.be/68MlUqJwYU8"
+                    className={styles.youtube_channel}
+                  >
+                    <RiRadioButtonLine /> Online
+                  </a>
                 </Badge>{" "}
               </li>
               <li>
@@ -315,6 +335,12 @@ export default function Home({ allEvents }) {
                 evento e na descrição da live. O correto preenchimento do
                 formulário é de inteira responsabilidade do participante
               </li>
+              <li>
+                Link para certificados:{" "}
+                <a href="https://forms.gle/ZQeNBEcu65FcyRX29">
+                  Formulário participação
+                </a>
+              </li>
               <li>The event is free and open to the community</li>
               <li>
                 The lectures/presentations will be broadcast live on the GEGE
@@ -322,8 +348,13 @@ export default function Home({ allEvents }) {
               </li>
               <li>
                 The link to live:{" "}
-                <Badge variant="secondary">
-                  <RiRadioButtonLine /> Offline
+                <Badge variant="danger">
+                  <a
+                    href="https://youtu.be/68MlUqJwYU8"
+                    className={styles.youtube_channel}
+                  >
+                    <RiRadioButtonLine /> Online
+                  </a>
                 </Badge>{" "}
               </li>
               <li>
@@ -344,6 +375,12 @@ export default function Home({ allEvents }) {
                 participation, will be disclosed here on the event website and
                 in the description of the live. Correct completion of the form
                 is the sole responsibility of the participant
+              </li>
+              <li>
+                Link to certificates:{" "}
+                <a href="https://forms.gle/ZQeNBEcu65FcyRX29">
+                  Participation Form
+                </a>
               </li>
             </ul>
           </Col>
