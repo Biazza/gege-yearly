@@ -97,7 +97,7 @@ export default function Home({ allEvents }) {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
-              <Navbar.Brand href="https://youtu.be/68MlUqJwYU8">
+              <Navbar.Brand href="https://youtu.be/viaIQ7lXiYc" target="_blank">
                 <Badge variant="danger">
                   <RiRadioButtonLine /> Online
                 </Badge>
@@ -141,8 +141,9 @@ export default function Home({ allEvents }) {
                   <Card.Title>LINK PARA LIVE/LINK TO LIVE</Card.Title>
                   <Button variant="danger" className={styles.live_button}>
                     <a
-                      href="https://youtu.be/68MlUqJwYU8"
+                      href="https://youtu.be/viaIQ7lXiYc"
                       className={styles.youtube_channel}
+                      target="_blank"
                     >
                       <RiRadioButtonLine /> Online
                     </a>
@@ -150,7 +151,7 @@ export default function Home({ allEvents }) {
                   <br />
                   <br />
                   <Card.Title>LINK PARA CERTIFICADOS</Card.Title>
-                  <a href="https://forms.gle/ZQeNBEcu65FcyRX29">
+                  <a href="https://forms.gle/ZQeNBEcu65FcyRX29" target="_blank">
                     Formulário participação/Participation Form
                   </a>
                 </Card.Body>
@@ -196,6 +197,7 @@ export default function Home({ allEvents }) {
                     <a
                       href="https://www.youtube.com/channel/UCdQYUhUNS6odJnKLFB7kZPQ"
                       className={styles.youtube_channel}
+                      target="_blank"
                     >
                       <IoLogoYoutube /> Canal do GEGE no YouTube
                     </a>
@@ -206,7 +208,10 @@ export default function Home({ allEvents }) {
                   <YouTube video="dMAjeueLm3w" />
                   <br />
                   <br />
-                  <a href="https://www.fct.unesp.br/#!/pesquisa/grupos-de-estudo-e-pesquisa/gege/home">
+                  <a
+                    href="https://www.fct.unesp.br/#!/pesquisa/grupos-de-estudo-e-pesquisa/gege/home"
+                    target="_blank"
+                  >
                     Site do GEGE/GEGE Website
                   </a>
                 </Card.Body>
@@ -309,8 +314,9 @@ export default function Home({ allEvents }) {
                 O link para a live:{" "}
                 <Badge variant="danger">
                   <a
-                    href="https://youtu.be/68MlUqJwYU8"
+                    href="https://youtu.be/viaIQ7lXiYc"
                     className={styles.youtube_channel}
+                    target="_blank"
                   >
                     <RiRadioButtonLine /> Online
                   </a>
@@ -350,8 +356,9 @@ export default function Home({ allEvents }) {
                 The link to live:{" "}
                 <Badge variant="danger">
                   <a
-                    href="https://youtu.be/68MlUqJwYU8"
+                    href="https://youtu.be/viaIQ7lXiYc"
                     className={styles.youtube_channel}
+                    target="_blank"
                   >
                     <RiRadioButtonLine /> Online
                   </a>
