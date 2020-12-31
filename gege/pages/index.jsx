@@ -97,7 +97,7 @@ export default function Home({ allEvents }) {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
-              <Navbar.Brand href="https://youtu.be/viaIQ7lXiYc" target="_blank">
+              <Navbar.Brand href="https://youtube.com/playlist?list=PLuSdrjBd8vbUkxjNtdsFbw2y1SMX7yTba" target="_blank">
                 <Badge variant="danger">
                   <RiRadioButtonLine /> Online
                 </Badge>
@@ -141,7 +141,7 @@ export default function Home({ allEvents }) {
                   <Card.Title>LINK PARA LIVE/LINK TO LIVE</Card.Title>
                   <Button variant="danger" className={styles.live_button}>
                     <a
-                      href="https://youtu.be/viaIQ7lXiYc"
+                      href="https://youtube.com/playlist?list=PLuSdrjBd8vbUkxjNtdsFbw2y1SMX7yTba"
                       className={styles.youtube_channel}
                       target="_blank"
                     >
@@ -314,7 +314,7 @@ export default function Home({ allEvents }) {
                 O link para a live:{" "}
                 <Badge variant="danger">
                   <a
-                    href="https://youtu.be/viaIQ7lXiYc"
+                    href="https://youtube.com/playlist?list=PLuSdrjBd8vbUkxjNtdsFbw2y1SMX7yTba"
                     className={styles.youtube_channel}
                     target="_blank"
                   >
@@ -356,7 +356,7 @@ export default function Home({ allEvents }) {
                 The link to live:{" "}
                 <Badge variant="danger">
                   <a
-                    href="https://youtu.be/viaIQ7lXiYc"
+                    href="https://youtube.com/playlist?list=PLuSdrjBd8vbUkxjNtdsFbw2y1SMX7yTba"
                     className={styles.youtube_channel}
                     target="_blank"
                   >
